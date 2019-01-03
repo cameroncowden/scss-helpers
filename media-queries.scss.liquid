@@ -1,0 +1,21 @@
+@mixin for-mobile-only {
+  @media (max-width: 739px) { @content; }
+}
+@mixin for-tab-up {
+  @media (min-width: 740px) { @content; }
+}
+@mixin for-tab-only {
+  @media (min-width: 740px) and (max-width: 979px) { @content; }
+}
+@mixin for-tab-and-mobile {
+  @media (max-width: 979px) { @content; }
+}
+@mixin for-desk-up {
+  @media (min-width: 980px) { @content; }
+}
+@mixin for-desk-down {
+  @media (max-width: 1219px) { @content; }
+}
+@mixin for-hd-up {
+  @media (min-width: 1220px) { @content; }
+}
